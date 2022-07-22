@@ -1,0 +1,14 @@
+function s(){
+	var d=document.createElement('d');
+	d.style.border='1px solid #000';
+	d.style.padding='1px';
+	var t;
+	for(var i=0;i<10;i++){
+		t=document.createElement('d');
+		t.style.border='1px solid #000';
+		t.style.padding='1px';
+		d.appendChild(t);
+	}
+	document.body.appendChild(d);
+}
+setInterval('s()',1);
